@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Tech</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-logo">Elite Tech</div>
+    </div>
+
+    <div id="progressBar"></div>
+
+    <nav>
+        <div class="logo">Elite Tech</div>
+        <ul>
+            <li><a href="#about" class="translate-me" data-en="About" data-ar="من نحن">About</a></li>
+            <li><a href="#team" class="translate-me" data-en="Team" data-ar="الفريق">Team</a></li>
+            <li><a href="#contact" class="translate-me" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+        </ul>
+        <button id="langBtn">AR</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-glow glow1"></div>
+        <div class="hero-glow glow2"></div>
+        
+        <div class="hero-content">
+            <h1 id="hero-title" data-en="Turning Ideas Into Digital Solutions" data-ar="نحوّل الأفكار إلى حلول رقمية">Turning Ideas Into Digital Solutions</h1> 
+            <p id="hero-desc" class="translate-me" data-en="Elite Tech specializes in building modern websites, web applications and innovative digital experiences." data-ar="إيليت تيك متخصصة في بناء مواقع الويب الحديثة، تطبيقات الويب، والتجارب الرقمية المبتكرة.">
+                Elite Tech specializes in building modern websites, web applications and innovative digital experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn translate-me" data-en="Explore Projects" data-ar="تصفح المشاريع">Explore Projects</a>
+                <a href="#contact" class="btn btn-outline translate-me" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about hidden" id="about">
+        <div class="section-title">
+            <span class="translate-me" data-en="ABOUT US" data-ar="من نحن">ABOUT US</span>
+            <h2 class="translate-me" data-en="Building Technology For The Future" data-ar="نبني التكنولوجيا من أجل المستقبل">Building Technology For The Future</h2>
+        </div>
+
+        <div class="about-grid">
+            <div>
+                <h3 class="translate-me" data-en="Who We Are" data-ar="من نحن؟">Who We Are</h3>
+                <p class="translate-me" data-en="Elite Tech is a creative technology team focused on delivering websites, applications and innovative software solutions." data-ar="إيليت تيك هو فريق تكنولوجي إبداعي يركز على تقديم مواقع الويب والتطبيقات والحلول البرمجية المبتكرة.">
+                    Elite Tech is a creative technology team focused on delivering websites, applications and innovative software solutions.
+                </p>
+            </div>
+            <div>
+                <h3 class="translate-me" data-en="Vision" data-ar="رؤيتنا">Vision</h3>
+                <p class="translate-me" data-en="To become a leading digital team delivering impactful and innovative products." data-ar="أن نصبح فريقاً رقمياً رائداً يقدم منتجات مبتكرة ومؤثرة تخدم السوق البرمجي العالمي.">
+                    To become a leading digital team delivering impactful and innovative products.
+                </p>
+            </div>
+            <div>
+                <h3 class="translate-me" data-en="Mission" data-ar="رسالتنا">Mission</h3>
+                <p class="translate-me" data-en="Transforming ideas into high quality digital experiences." data-ar="تحويل الأفكار والخطط الطموحة إلى تجارب رقمية ملموسة وعالية الجودة.">
+                    Transforming ideas into high quality digital experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p class="translate-me" data-en="Projects" data-ar="المشاريع المنفذة">Projects</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="8">0</h2>
+            <p class="translate-me" data-en="Team Members" data-ar="أعضاء الفريق">Team Members</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="5">0</h2>
+            <p class="translate-me" data-en="Years Experience" data-ar="سنوات الخبرة">Years Experience</p>
+        </div>
+    </section>
+
+    <section id="team" style="position: relative;">
+        <div class="section-title">
+            <span class="translate-me" data-en="OUR TEAM" data-ar="فريق العمل">OUR TEAM</span>
+            <h2 class="translate-me" data-en="Meet The Experts" data-ar="التقِ بالخبراء">Meet The Experts</h2>
+        </div>
+
+        <div class="swiper teamSwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="member-content">
+                            <h3>Sarah Al-Hamoud</h3>
+                            <span class="role translate-me" data-ar="مطورة Full-Stack" data-en="Full-Stack Developer">Full-Stack Developer</span>
+                            <p class="member-desc translate-me" 
+                               data-ar="طالبة هندسة برمجيات ومطورة Full-Stack حاصلة على شهادة Professional Full-Stack Web Development ومتخصصة في تطوير تطبيقات الويب باستخدام Laravel والتقنيات الحديثة." 
+                               data-en="Software Engineering student and certified Professional Full-Stack Developer specializing in Laravel and modern web technologies.">
+                                Software Engineering student and certified Professional Full-Stack Developer specializing in Laravel and modern web technologies.
+                            </p>
+                            <div class="member-links">
+                                <a href="https://www.linkedin.com/in/sara-al-hamoud" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://wa.me/+905394493674" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="member-content">
+                            <h3>Alia Asfour</h3>
+                            <span class="role translate-me" data-ar="مطورة Front-End" data-en="Front-End Developer">Front-End Developer</span>
+                            <p class="member-desc translate-me" 
+                               data-ar="طالبة هندسة برمجيات ومطورة Front-End تمتلك خبرة في JavaScript وSass وTailwind CSS وBootstrap بالإضافة إلى تطوير تطبيقات سطح المكتب باستخدام C# وMySQL." 
+                               data-en="Software Engineering student and Front-End Developer experienced in JavaScript, Sass, Tailwind CSS, Bootstrap, C#, and MySQL.">
+                                Software Engineering student and Front-End Developer experienced in JavaScript, Sass, Tailwind CSS, Bootstrap, C#, and MySQL.
+                            </p>
+                            <div class="member-links">
+                                <a href="https://www.linkedin.com/in/alya-asfor-08712726b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://wa.me/+963939821817" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="member-content">
+                            <h3>Eman Badran</h3>
+                            <span class="role translate-me" data-ar="مطورة ويب ومهتمة بالذكاء الاصطناعي" data-en="Web Developer & AI Enthusiast">Web Developer & AI Enthusiast</span>
+                            <p class="member-desc translate-me" 
+                               data-ar="طالبة هندسة برمجيات ومطورة ويب ناشئة مهتمة بتقنيات الذكاء الاصطناعي وتطبيقاته في تطوير الحلول الرقمية." 
+                               data-en="Software Engineering student and aspiring web developer interested in Artificial Intelligence and its applications in digital solutions.">
+                                Software Engineering student and aspiring web developer interested in Artificial Intelligence and its applications in digital solutions.
+                            </p>
+                            <div class="member-links">
+                                <a href="https://wa.me/+9647851532696" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="member-content">
+                            <h3>Mais Abdullatif Ghazal</h3>
+                            <span class="role translate-me" data-ar="مطورة Front-End" data-en="Front-End Developer">Front-End Developer</span>
+                            <p class="member-desc translate-me" 
+                               data-ar="طالبة هندسة برمجيات ومطورة مواقف وتطبيقات متخصصة في تطوير الواجهات الأمامية والخلفية." 
+                               data-en="Software Engineering student and Front-End Developer experienced in JavaScript, Sass, Tailwind CSS, Bootstrap, C#, and MySQL.">
+                                Software Engineering student and Front-End Developer experienced in JavaScript, Sass, Tailwind CSS, Bootstrap, C#, and MySQL.
+                            </p>
+                            <div class="member-links">
+                                <a href="https://wa.me/+963968668901" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="team-card">
+                        <div class="member-content">
+                            <h3>Yamen Al-Sayeh</h3>
+                            <span class="role translate-me" data-ar="مطور Back-End" data-en="Back-End Developer">Back-End Developer</span>
+                            <p class="member-desc translate-me" 
+                               data-ar="طالب هندسة برمجيات متخصص في تطوير الأنظمة الخلفية وقواعد البيانات وبناء تطبيقات آمنة وقابلة للتوسع." 
+                               data-en="Software Engineering student specializing in backend development, databases, and scalable software solutions using modern technologies.">
+                                Software Engineering student specializing in backend development, databases, and scalable software solutions using modern technologies.
+                            </p>
+                            <div class="member-links">
+                                <a href="https://wa.me/963969701502" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="swiper-buttons">
+                <div class="swiper-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-next"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <span class="translate-me" data-en="CONTACT" data-ar="اتصل بنا">CONTACT</span>
+            <h2 class="translate-me" data-en="Let's Work Together" data-ar="لنعمل معاً على مشروعك القادم">Let's Work Together</h2>
+        </div>
+        <div class="contact-box">
+            <a href="https://wa.me/963930992983" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/elitetech975" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <span class="translate-me" data-en="Elite Tech © 2026. All Rights Reserved." data-ar="إيليت تيك © 2026. جميع الحقوق محفوظة.">Elite Tech © 2026. All Rights Reserved.</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
